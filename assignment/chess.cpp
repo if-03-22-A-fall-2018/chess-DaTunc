@@ -24,6 +24,11 @@
 
  void 	init_chess_board (ChessBoard chess_board)
  {
+   for (size_t i = 0; i < 8; i++) {
+     for (size_t x = 0; x < 8; x++) {
+       chess_board[i][x].is_occupied = false;
+     }
+   }
  }
 
 
